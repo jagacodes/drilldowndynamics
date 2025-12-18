@@ -693,11 +693,30 @@
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  transition: all 0.3s ease;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease;
+  animation-fill-mode: both;
 }
+
+.contact-detail-card:nth-child(1) { animation-delay: 0.1s; }
+.contact-detail-card:nth-child(2) { animation-delay: 0.2s; }
+.contact-detail-card:nth-child(3) { animation-delay: 0.3s; }
 
 .contact-detail-card:hover {
   border-color: var(--ocean-blue);
+  transform: translateX(10px);
+  box-shadow: 0 12px 40px rgba(14, 165, 233, 0.2);
+}
+
+.contact-icon {
+  transition: all 0.4s ease;
+}
+
+.contact-detail-card:hover .contact-icon {
+  transform: scale(1.2) rotate(10deg);
+  background: var(--ocean-blue);
+  color: #FFFFFF;
 }
 
 .contact-icon {
