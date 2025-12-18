@@ -113,7 +113,8 @@ body {
 
 /* Header Styles */
 .dark-header {
-  background: var(--bg-primary);
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
   padding: 0 7.6923%;
   display: flex;
@@ -125,6 +126,8 @@ body {
   height: 80px;
   z-index: 1000;
   box-sizing: border-box;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease;
 }
 
 .logo-container {
