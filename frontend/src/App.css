@@ -1,14 +1,14 @@
 :root {
-  /* Backgrounds - Dark Theme Foundation */
-  --bg-primary: #000000;
-  --bg-secondary: #0A0A0A;
-  --bg-card: #121212;
-  --bg-overlay: rgba(255, 255, 255, 0.05);
+  /* Backgrounds - Modern Dark Theme */
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-card: #1E293B;
+  --bg-overlay: rgba(14, 165, 233, 0.05);
   
-  /* Text - High Contrast for Dark Theme */
-  --text-primary: #FFFFFF;
-  --text-secondary: rgba(255, 255, 255, 0.85);
-  --text-muted: #6B7280;
+  /* Text - High Contrast */
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
   
   /* Ocean Blue Accent Colors - Brand Colors */
   --ocean-blue-light: #38BDF8;
@@ -16,10 +16,11 @@
   --ocean-blue-dark: #0284C7;
   --ocean-blue-darker: #0369A1;
   --ocean-hover: rgba(14, 165, 233, 0.1);
+  --ocean-glow: rgba(14, 165, 233, 0.4);
   
-  /* Borders - Subtle Dark Theme */
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --border-medium: rgba(255, 255, 255, 0.2);
+  /* Borders - Subtle */
+  --border-subtle: rgba(148, 163, 184, 0.1);
+  --border-medium: rgba(148, 163, 184, 0.2);
 }
 
 * {
