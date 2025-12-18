@@ -605,6 +605,8 @@ body {
   font-weight: 700;
   margin-bottom: 16px;
   color: var(--text-primary);
+  position: relative;
+  z-index: 1;
 }
 
 .cta-description {
@@ -614,6 +616,8 @@ body {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Footer */
