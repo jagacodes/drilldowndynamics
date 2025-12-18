@@ -246,15 +246,15 @@ body {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: #FFFFFF;
-  border: 1px solid var(--border-medium);
-  border-radius: 0px;
-  padding: 14px 24px;
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--ocean-blue);
+  border: 2px solid var(--ocean-blue);
+  border-radius: 8px;
+  padding: 14px 28px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 50px;
   text-decoration: none;
   display: inline-flex;
@@ -262,12 +262,34 @@ body {
   justify-content: center;
   gap: 8px;
   line-height: 1.2;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: var(--ocean-blue);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+  z-index: -1;
+}
+
+.btn-secondary:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--ocean-blue);
-  color: var(--ocean-blue);
+  color: #FFFFFF;
+  border-color: var(--ocean-blue-light);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(14, 165, 233, 0.3);
 }
 
 .btn-large {
