@@ -179,6 +179,7 @@ body {
   width: 100%;
   height: 2px;
   background: var(--ocean-blue);
+  box-shadow: 0 0 10px var(--ocean-glow);
 }
 
 .mobile-menu-button {
