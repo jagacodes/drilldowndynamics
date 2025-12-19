@@ -47,18 +47,18 @@ const About = () => {
           <div className="content-text">
             <h2 className="content-title">Our Story</h2>
             <p className="content-paragraph">
-              Drilldown Dynamics was founded in 2025 with a vision to transform oil and
-              gas equipment rental services across Africa. With over 25 years of combined
-              leadership experience in the oil and gas sector, we bring proven expertise,
-              technical capacity, and innovative solutions to Nigeria's dynamic energy
-              landscape.
+              Drilldown Dynamics was founded in 2025 with a vision to become a leading 
+              integrated energy services provider across Africa and beyond. With over 25 years 
+              of combined leadership experience, we deliver comprehensive solutions spanning 
+              drilling, well construction, energy logistics, consulting, and sustainable 
+              energy technologies for oil, gas, geothermal, and mining operations globally.
             </p>
             <p className="content-paragraph">
-              We understand the unique challenges of onshore and offshore operations and
-              deliver tailored services that enable our clients to achieve efficiency,
-              safety, and operational excellence. Our team's deep understanding of
-              Nigerian operations and strong relationships with International Oil
-              Companies (IOCs) position us as a trusted partner in the industry.
+              We understand the complex challenges of modern energy operations—from offshore 
+              and onshore drilling to supply chain management and emissions reduction. Our 
+              integrated approach combines technical excellence with innovation in digital 
+              transformation, drilling automation, and sustainable energy solutions, positioning 
+              us as a strategic partner for the evolving global energy landscape.
             </p>
           </div>
           <div className="content-image">
