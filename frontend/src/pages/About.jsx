@@ -78,8 +78,9 @@ const About = () => {
             <Eye size={48} className="vm-icon" />
             <h3 className="vm-title">Our Vision</h3>
             <p className="vm-text">
-              To be the preferred partner in the provision of state-of-the-art oil and
-              gas rental services across Africa.
+              To be the leading integrated energy services provider delivering innovative 
+              drilling, logistics, and sustainable solutions for the global oil, gas, 
+              geothermal, and mining sectors.
             </p>
           </div>
           <div className="vm-card">
