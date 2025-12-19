@@ -25,6 +25,10 @@ const Header = () => {
           alt="Drilldown Dynamics Logo" 
           className="logo-image"
         />
+        <div className="logo-text-container">
+          <span className="logo-text-main">DRILLDOWN DYNAMICS</span>
+          <span className="logo-text-sub">Powering Energy Solutions</span>
+        </div>
       </Link>
 
       {/* Desktop Navigation */}
