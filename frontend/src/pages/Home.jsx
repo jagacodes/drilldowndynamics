@@ -40,9 +40,9 @@ const Home = () => {
               Powering Africa's Energy Future
             </h1>
             <p className="hero-description">
-              Premier oil and gas equipment rental services delivering innovative
-              solutions for drilling, engineering, and oilfield operations across
-              Nigeria and beyond.
+              Comprehensive drilling, engineering, and energy solutions provider 
+              delivering innovative services for oil, gas, geothermal, and mining 
+              operations globally—from well construction to sustainable energy solutions.
             </p>
             <div className="hero-buttons">
               <Link to="/services" className="btn-primary">
