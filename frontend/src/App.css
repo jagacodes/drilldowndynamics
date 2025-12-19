@@ -134,43 +134,18 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
-.logo-icon {
-  color: var(--ocean-blue);
+.logo-image {
+  height: 50px;
+  width: auto;
   transition: all 0.4s ease;
-  animation: drillDown 2s ease-in-out infinite;
+  filter: brightness(1);
 }
 
-@keyframes drillDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(4px);
-  }
-}
-
-.logo-container:hover .logo-icon {
-  color: var(--ocean-blue-light);
-  transform: scale(1.1) rotate(5deg);
-  filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.6));
-  animation: none;
-}
-
-.text-logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--ocean-blue);
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.logo-container:hover .text-logo {
-  color: var(--ocean-blue-light);
-  text-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+.logo-container:hover .logo-image {
+  transform: scale(1.05);
+  filter: brightness(1.1) drop-shadow(0 0 10px rgba(14, 165, 233, 0.4));
 }
 
 .dark-nav {
