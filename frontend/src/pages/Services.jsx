@@ -5,49 +5,49 @@ const Services = () => {
   const services = [
     {
       icon: <Wrench size={40} />,
-      title: 'Oilfield Asset & Equipment Rental',
-      description: 'Comprehensive rental solutions for all your drilling and oilfield operations. We provide state-of-the-art equipment tailored to meet the specific demands of both onshore and offshore projects.',
+      title: 'Drilling & Well Construction Services',
+      description: 'Comprehensive drilling, engineering, and well construction services for oil, gas, geothermal, and mining operations globally. We deliver end-to-end solutions for offshore and onshore projects including completions, intervention, and well management.',
       features: [
-        'Drilling rigs and specialized machinery',
-        'Flexible rental terms',
-        'Regular maintenance and support',
-        '24/7 technical assistance',
+        'Offshore and onshore drilling operations',
+        'Well completions and intervention',
+        'Geothermal and mining drilling',
+        'Well management and optimization',
       ],
       image: 'https://images.unsplash.com/photo-1578356058390-f58c575337a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
     {
       icon: <Settings size={40} />,
-      title: 'Drilling Rigs & Specialized Machinery',
-      description: 'Access to cutting-edge drilling rigs and specialized equipment designed for maximum efficiency and safety in challenging environments.',
+      title: 'Equipment & Technology Solutions',
+      description: 'Acquisition, leasing, and operation of drilling rigs, vessels, and specialized equipment. Advanced machinery for drilling, logging, testing, reservoir evaluation, and drilling automation technologies.',
       features: [
-        'Latest generation drilling rigs',
-        'Advanced logging equipment',
-        'Testing and evaluation tools',
-        'Customized equipment packages',
+        'Drilling rigs, vessels, and equipment',
+        'Advanced logging and testing tools',
+        'Reservoir evaluation technologies',
+        'Drilling automation systems',
       ],
       image: 'https://images.unsplash.com/photo-1629540946404-ebe133e99f49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
     {
       icon: <Gauge size={40} />,
-      title: 'Reservoir Evaluation & Logging Support',
-      description: 'Expert reservoir evaluation and logging services to optimize your drilling operations and maximize resource recovery.',
+      title: 'Energy Logistics & Supply Chain',
+      description: 'Integrated energy logistics and supply chain solutions including transportation of hydrocarbons, drilling materials, heavy equipment, and bulk cargo via land, sea, and air. Complete storage, distribution, and infrastructure management.',
       features: [
-        'Advanced logging technologies',
-        'Reservoir characterization',
-        'Formation evaluation',
-        'Real-time data analysis',
+        'Hydrocarbon transportation services',
+        'Equipment and materials logistics',
+        'Storage and distribution management',
+        'Multi-modal supply chain solutions',
       ],
       image: 'https://images.unsplash.com/photo-1572970388430-a7fff761e597?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxvaWxmaWVsZHxlbnwwfHx8fDE3NjYxMDEwNDZ8MA&ixlib=rb-4.1.0&q=85'
     },
     {
       icon: <HardHat size={40} />,
-      title: 'Comprehensive Drilling & Engineering Solutions',
-      description: 'Full-spectrum drilling and engineering services from planning to execution, ensuring successful project delivery.',
+      title: 'Consulting & Project Management',
+      description: 'Expert consulting, project management, and technical services across the energy value chain. Services include field development, digital solutions, HSE (Health, Safety & Environment), and asset optimization for upstream, midstream, and downstream operations.',
       features: [
-        'Well construction services',
-        'Project management (PMP-certified)',
-        'Engineering consultation',
-        'Safety and compliance oversight',
+        'Field development planning',
+        'Digital transformation solutions',
+        'HSE management and compliance',
+        'Asset optimization services',
       ],
       image: 'https://images.unsplash.com/photo-1561625101-fd85c8e135f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
