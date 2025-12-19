@@ -6,17 +6,17 @@ const About = () => {
     {
       icon: <Award size={32} />,
       title: 'Customer-First',
-      description: 'We place client needs and satisfaction at the center of every solution.'
+      description: 'We place client needs and satisfaction at the center of every solution, delivering tailored services that drive operational excellence.'
     },
     {
       icon: <Target size={32} />,
       title: 'Innovation',
-      description: 'We leverage technology and expertise to deliver forward-thinking oilfield solutions.'
+      description: 'We leverage cutting-edge technology, R&D, and digital transformation to deliver forward-thinking energy solutions.'
     },
     {
       icon: <Eye size={32} />,
-      title: 'Excellence',
-      description: 'We maintain the highest standards in safety, quality, and operational performance.'
+      title: 'Sustainability',
+      description: 'We are committed to environmental stewardship through CCUS, renewable energy integration, and emissions reduction technologies.'
     },
   ];
 
