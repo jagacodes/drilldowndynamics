@@ -5,18 +5,18 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 const Home = () => {
   const services = [
     {
-      title: 'Oilfield Asset & Equipment Rental',
-      description: 'Comprehensive rental solutions for drilling operations',
+      title: 'Drilling & Well Construction',
+      description: 'Comprehensive services for oil, gas, geothermal, and mining operations',
       image: 'https://images.unsplash.com/photo-1561625101-fd85c8e135f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
     {
-      title: 'Drilling Rigs & Machinery',
-      description: 'State-of-the-art drilling equipment for all operations',
+      title: 'Energy Logistics & Supply Chain',
+      description: 'Integrated transportation, storage, and distribution solutions',
       image: 'https://images.unsplash.com/photo-1629540946404-ebe133e99f49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
     {
-      title: 'Engineering Solutions',
-      description: 'Expert engineering support for complex projects',
+      title: 'Sustainable Energy Solutions',
+      description: 'CCUS, hydrogen, renewables integration, and emissions reduction',
       image: 'https://images.unsplash.com/photo-1572970388430-a7fff761e597?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxvaWxmaWVsZHxlbnwwfHx8fDE3NjYxMDEwNDZ8MA&ixlib=rb-4.1.0&q=85'
     },
   ];
