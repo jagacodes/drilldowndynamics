@@ -20,6 +20,11 @@ const Header = () => {
   return (
     <header className="dark-header">
       <Link to="/" className="logo-container">
+        <svg className="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="19" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path d="M20 10 L20 30 M15 25 L20 30 L25 25" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M20 5 L20 25 M15 20 L20 25 L25 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.6"/>
+        </svg>
         <div className="text-logo">DRILLDOWN DYNAMICS</div>
       </Link>
 
