@@ -23,11 +23,11 @@ const Home = () => {
 
   const benefits = [
     'Over 25 years of combined leadership experience',
-    'Proven track record with International Oil Companies',
-    'Comprehensive onshore and offshore capabilities',
-    'Advanced machinery and technology',
-    'Local expertise in Nigerian operations',
-    'PMP-certified project management',
+    'Global drilling services for oil, gas, geothermal, and mining',
+    'Integrated energy logistics and supply chain solutions',
+    'Advanced R&D in drilling automation and digital transformation',
+    'Sustainable energy solutions (CCUS, hydrogen, renewables)',
+    'Comprehensive consulting and project management services',
   ];
 
   return (
