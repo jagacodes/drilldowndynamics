@@ -93,12 +93,40 @@ const Services = () => {
         ))}
       </section>
 
+      {/* Additional Services */}
+      <section className="additional-services-section">
+        <h2 className="section-title">Additional Specialized Services</h2>
+        <div className="additional-services-grid">
+          <div className="additional-service-card">
+            <h3 className="additional-service-title">Trading & Supply</h3>
+            <p className="additional-service-description">
+              Import, export, trading, and supply of drilling equipment, petroleum products, 
+              petrochemicals, industrial commodities, and energy-related technologies.
+            </p>
+          </div>
+          <div className="additional-service-card">
+            <h3 className="additional-service-title">Research & Development</h3>
+            <p className="additional-service-description">
+              RD&D of innovative technologies in drilling automation, energy efficiency, 
+              carbon management, and digital transformation for energy and resources sectors.
+            </p>
+          </div>
+          <div className="additional-service-card">
+            <h3 className="additional-service-title">Sustainable Energy Solutions</h3>
+            <p className="additional-service-description">
+              Investment and development in CCUS (Carbon Capture, Utilization & Storage), 
+              hydrogen technologies, renewables integration, and emissions reduction solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="services-cta-section">
         <h2 className="cta-title">Need a Custom Solution?</h2>
         <p className="cta-description">
           Our team can design tailored equipment and service packages to meet your
-          specific project requirements.
+          specific project requirements across the entire energy value chain.
         </p>
         <a href="/contact" className="btn-primary btn-large">
           Request a Quote
