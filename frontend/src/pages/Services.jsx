@@ -60,8 +60,9 @@ const Services = () => {
         <div className="page-hero-content">
           <h1 className="page-hero-title">Our Services</h1>
           <p className="page-hero-description">
-            Comprehensive oil and gas equipment rental and support services for
-            onshore and offshore operations across Nigeria and Africa.
+            Comprehensive energy solutions spanning drilling, well construction, logistics, 
+            consulting, and sustainable technologies for oil, gas, geothermal, and mining 
+            operations globally.
           </p>
         </div>
       </section>
