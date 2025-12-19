@@ -132,6 +132,31 @@ body {
 
 .logo-container {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  color: var(--ocean-blue);
+  transition: all 0.4s ease;
+  animation: drillDown 2s ease-in-out infinite;
+}
+
+@keyframes drillDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.logo-container:hover .logo-icon {
+  color: var(--ocean-blue-light);
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.6));
+  animation: none;
 }
 
 .text-logo {
@@ -143,7 +168,7 @@ body {
   cursor: pointer;
 }
 
-.text-logo:hover {
+.logo-container:hover .text-logo {
   color: var(--ocean-blue-light);
   text-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
 }
