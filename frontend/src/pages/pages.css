@@ -319,6 +319,53 @@
   filter: brightness(1.05) contrast(1.1);
 }
 
+.additional-services-section {
+  padding: 80px 7.6923%;
+  background: var(--bg-primary);
+}
+
+.additional-services-grid {
+  max-width: 1400px;
+  margin: 60px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.additional-service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 40px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.6s ease;
+  animation-fill-mode: both;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.additional-service-card:nth-child(1) { animation-delay: 0.1s; }
+.additional-service-card:nth-child(2) { animation-delay: 0.2s; }
+.additional-service-card:nth-child(3) { animation-delay: 0.3s; }
+
+.additional-service-card:hover {
+  border-color: var(--ocean-blue);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(14, 165, 233, 0.3);
+}
+
+.additional-service-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.additional-service-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 .services-cta-section {
   padding: 80px 7.6923%;
   text-align: center;
