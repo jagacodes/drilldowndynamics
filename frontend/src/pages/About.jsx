@@ -34,8 +34,9 @@ const About = () => {
         <div className="page-hero-content">
           <h1 className="page-hero-title">About Drilldown Dynamics</h1>
           <p className="page-hero-description">
-            A forward-looking oil and gas services company established in 2025 with a
-            focus on oilfield asset management and equipment rental services.
+            A forward-looking energy services company established in 2025, delivering 
+            comprehensive drilling, engineering, logistics, and sustainable energy solutions 
+            for the global oil, gas, geothermal, and mining sectors.
           </p>
         </div>
       </section>
