@@ -21,10 +21,14 @@ const About = () => {
   ];
 
   const objectives = [
-    'Acquire, own, lease, charter, and operate drilling rigs and specialized equipment',
-    'Deploy advanced machinery for drilling, logging, testing, and reservoir evaluation',
-    'Provide comprehensive drilling, engineering, and well construction services',
-    'Support both onshore and offshore oil and gas projects',
+    'Provide comprehensive drilling, engineering, and well construction services for oil, gas, geothermal, and mining operations globally',
+    'Acquire, own, lease, and operate drilling rigs, vessels, and specialized equipment including advanced machinery for drilling, logging, testing, and reservoir evaluation',
+    'Offer integrated energy logistics and supply chain solutions including transportation, storage, and distribution of hydrocarbons and drilling materials',
+    'Deliver consulting, project management, and technical services across the energy value chain including field development, digital solutions, and HSE',
+    'Engage in import, export, trading, and supply of drilling equipment, petroleum products, petrochemicals, and energy-related technologies',
+    'Conduct research, development, and deployment of innovative technologies in drilling automation, energy efficiency, and digital transformation',
+    'Invest in and develop sustainable energy solutions including CCUS, hydrogen, renewables integration, and emissions reduction technologies',
+    'Undertake partnerships, joint ventures, and investments aligned with advancing our strategic vision in the global energy sector',
   ];
 
   return (
