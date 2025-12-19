@@ -87,9 +87,10 @@ const About = () => {
             <Target size={48} className="vm-icon" />
             <h3 className="vm-title">Our Mission</h3>
             <p className="vm-text">
-              To deliver reliable, innovative, and cost-efficient drilling and oilfield
-              support solutions that empower our clients to unlock maximum value from
-              their operations.
+              To deliver comprehensive, innovative, and sustainable energy solutions—from 
+              drilling and well construction to logistics, consulting, and carbon management—
+              empowering our clients to achieve operational excellence and environmental 
+              stewardship across the energy value chain.
             </p>
           </div>
         </div>
