@@ -1,0 +1,77 @@
+from fastapi import APIRouter, HTTPException, BackgroundTasks
+from models.contact import ContactSubmission, ContactSubmissionCreate
+from services.email_service import email_service
+from motor.motor_asyncio import AsyncIOMotorClient
+import os
+import logging
+from datetime import datetime
+
+logger = logging.getLogger(__name__)
+
+router = APIRouter()
+
+# MongoDB connection
+mongo_url = os.environ['MONGO_URL']
+client = AsyncIOMotorClient(mongo_url)
+db = client[os.environ['DB_NAME']]
+
+@router.post("/contact")
+async def submit_contact_form(
+    submission_data: ContactSubmissionCreate,
+    background_tasks: BackgroundTasks
+):
+    """
+    Handle contact form submission.
+    Stores data in MongoDB and sends email notification.
+    """
+    try:
+        # Create submission object
+        submission = ContactSubmission(**submission_data.dict())
+        
+        # Store in database
+        submission_dict = submission.dict()
+        await db.contact_submissions.insert_one(submission_dict)
+        
+        logger.info(f"Contact submission stored: {submission.id}")
+        
+        # Send email notification in background
+        background_tasks.add_task(
+            send_email_notification,
+            submission_dict
+        )
+        
+        return {
+            "success": True,
+            "message": "Thank you for contacting us! We'll get back to you soon.",
+            "submission_id": submission.id
+        }
+        
+    except Exception as e:
+        logger.error(f"Error processing contact submission: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail="An error occurred while processing your submission. Please try again later."
+        )
+
+async def send_email_notification(submission_data: dict):
+    """
+    Background task to send email notification.
+    """
+    try:
+        email_sent = email_service.send_contact_notification(submission_data)
+        
+        # Update database with email status
+        if email_sent:
+            await db.contact_submissions.update_one(
+                {"id": submission_data["id"]},
+                {
+                    "$set": {
+                        "email_sent": True,
+                        "email_sent_at": datetime.utcnow()
+                    }
+                }
+            )
+            logger.info(f"Email sent and database updated for submission {submission_data['id']}")
+        
+    except Exception as e:
+        logger.error(f"Error in background email task: {str(e)}")
