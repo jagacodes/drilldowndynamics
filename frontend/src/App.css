@@ -976,6 +976,18 @@ body {
     display: block;
   }
   
+  .logo-image {
+    height: 45px;
+  }
+  
+  .logo-text-sub {
+    display: none;
+  }
+  
+  .logo-text-main {
+    font-size: 16px;
+  }
+  
   .mobile-nav {
     display: flex;
     flex-direction: column;
