@@ -9,8 +9,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3 className="footer-title">DRILLDOWN DYNAMICS</h3>
           <p className="footer-text">
-            Forward-looking oil and gas services company delivering reliable,
-            innovative, and cost-efficient drilling and oilfield support solutions.
+            Integrated energy services provider delivering comprehensive drilling, 
+            logistics, consulting, and sustainable solutions for oil, gas, geothermal, 
+            and mining operations globally.
           </p>
         </div>
 
