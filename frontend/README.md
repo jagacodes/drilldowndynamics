@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# Drilldown Dynamics Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website for Drilldown Dynamics - an integrated energy services company delivering comprehensive drilling, logistics, and sustainable solutions globally.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+Visit the website at your deployed URL.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Modern Design**: Dark theme with ocean blue accents and smooth animations
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **6 Pages**: Home, About, Services, Portfolio, Leadership, Contact
+- **Custom Logo**: Professional branding with company logo and tagline
+- **Professional Images**: High-quality oil & gas industry images
+- **Contact Form**: Email integration ready (Formspree/Web3Forms)
+- **No Backend Required**: Pure frontend, easy to deploy
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Quick Start
 
-### `npm test`
+### Prerequisites
+- Node.js 16+ and Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+```bash
+cd frontend
+yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
-### `npm run eject`
+### Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+yarn build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Creates optimized production build in the `build` folder.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📧 Contact Form Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The contact form currently uses `mailto:`. For better user experience, integrate with:
 
-## Learn More
+### Formspree (Recommended)
+1. Sign up at https://formspree.io
+2. Create a new form
+3. Update Contact.jsx with your form endpoint
+4. See FRONTEND_SETUP.md for detailed instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Web3Forms (Alternative)
+1. Get access key at https://web3forms.com
+2. Update Contact.jsx with your access key
+3. Free unlimited submissions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌍 Deployment
 
-### Code Splitting
+### Netlify (Recommended)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
 
-### Analyzing the Bundle Size
+# Deploy
+cd frontend
+yarn build
+netlify deploy --dir=build --prod
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Vercel
 
-### Making a Progressive Web App
+```bash
+# Install Vercel CLI
+npm install -g vercel
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Deploy
+cd frontend
+vercel --prod
+```
 
-### Advanced Configuration
+### GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+# Install gh-pages
+yarn add --dev gh-pages
 
-### Deployment
+# Add to package.json
+"homepage": "https://yourusername.github.io/drilldown-dynamics",
+"scripts": {
+  "predeploy": "yarn build",
+  "deploy": "gh-pages -d build"
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Deploy
+yarn deploy
+```
 
-### `npm run build` fails to minify
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ui/           # Shadcn UI components
+│   │   ├── Header.jsx    # Navigation header
+│   │   └── Footer.jsx    # Footer component
+│   ├── pages/
+│   │   ├── Home.jsx      # Homepage
+│   │   ├── About.jsx     # About us page
+│   │   ├── Services.jsx  # Services page
+│   │   ├── Portfolio.jsx # Portfolio page
+│   │   ├── Leadership.jsx# Leadership team page
+│   │   └── Contact.jsx   # Contact page
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── package.json
+└── tailwind.config.js
+```
+
+## 🎨 Technologies
+
+- **React** 19.0.0 - UI library
+- **React Router** 7.5.1 - Navigation
+- **Tailwind CSS** 3.4.17 - Styling
+- **Shadcn UI** - Component library
+- **Lucide React** - Icons
+- **Sonner** - Toast notifications
+
+## 📱 Contact Information
+
+- **Email**: sales@drilldowndynamics.com
+- **Phone**: +234 806 643 4176
+- **Address**: Ogudu Estate, Lagos, Nigeria
+- **Website**: drilldowndynamics.com
+
+## 📄 License
+
+© 2025 Drilldown Dynamics. All rights reserved.
+
+## 🔧 Support
+
+For setup help, see [FRONTEND_SETUP.md](./FRONTEND_SETUP.md) for detailed instructions on:
+- Contact form integration options
+- Deployment guides
+- Environment configuration
+- Troubleshooting
+
+---
+
+Built with ❤️ for Drilldown Dynamics
