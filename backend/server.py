@@ -36,10 +36,18 @@ api_router.include_router(contact_router, tags=["contact"])
 # Include the router in the main app
 app.include_router(api_router)
 
+# CORS Configuration
+# Get allowed origins from environment variable or use default for development
+allowed_origins = os.environ.get('ALLOWED_ORIGINS', '*')
+
+# If ALLOWED_ORIGINS is a comma-separated string, convert to list
+if allowed_origins != '*':
+    allowed_origins = [origin.strip() for origin in allowed_origins.split(',')]
+
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,  # Now reads from .env
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -50,6 +58,11 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Log CORS configuration on startup
+@app.on_event("startup")
+async def startup_event():
+    logger.info(f"CORS allowed origins: {allowed_origins}")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
