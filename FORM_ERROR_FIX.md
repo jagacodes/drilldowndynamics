@@ -6,7 +6,7 @@ The form is trying to connect to the wrong backend URL.
 
 **Current frontend configuration:**
 ```
-REACT_APP_BACKEND_URL=https://offshore-gear-1.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://drilldown.preview.emergentagent.com
 ```
 
 **This needs to point to your Railway backend URL instead.**
