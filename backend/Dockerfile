@@ -14,8 +14,5 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Copy application code
 COPY . .
 
-# Expose port (Railway will override with $PORT)
+# Expose port
 EXPOSE 8000
-
-# Start command - use shell form to allow variable expansion
-CMD ["sh", "-c", "uvicorn server:app --host 0.0.0.0 --port ${PORT:-8000}"]
