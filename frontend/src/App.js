@@ -25,7 +25,7 @@ function App() {
             <Route path="/leadership" element={<Leadership />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/drilldowndynamicsadmin" element={<Admin />} />
           </Routes>
         </main>
         <Footer />
