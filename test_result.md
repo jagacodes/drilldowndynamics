@@ -6,6 +6,7 @@
 - Request a Quote button functionality
 - Navigation between pages
 - Contact form functionality
+- Admin Dashboard functionality
 
 ## Test Cases
 
@@ -44,13 +45,51 @@
 - **Description**: Test mobile responsive navigation menu
 - **Result**: Mobile menu button and navigation working correctly
 
+### TC6: Admin Login
+- **Status**: PENDING
+- **Description**: Test admin login with valid credentials
+- **Steps**:
+  1. Navigate to /admin
+  2. Enter username: admin
+  3. Enter password: drilldown2025
+  4. Click Login
+  5. Verify dashboard loads
+
+### TC7: Admin View Submissions
+- **Status**: PENDING
+- **Description**: View all contact submissions in admin dashboard
+- **Steps**:
+  1. Login as admin
+  2. Verify submissions table displays
+  3. Check pagination/sorting
+
+### TC8: Admin Respond to Query
+- **Status**: PENDING
+- **Description**: Respond to a contact submission
+- **Steps**:
+  1. Click respond button on a submission
+  2. Enter response text
+  3. Submit response
+  4. Verify status changes to "responded"
+
+### TC9: Admin Delete Submission
+- **Status**: PENDING
+- **Description**: Delete a submission
+- **Steps**:
+  1. Click delete button
+  2. Confirm deletion
+  3. Verify submission is removed
+
 ## Incorporate User Feedback
 - User reported "Request a Quote" button was not working
 - Fix applied: Changed from `<a href>` to React Router `<Link>` component
 - **Fix Status**: ✅ VERIFIED - Button now working correctly
+- User requested Admin page with password protection and response functionality
 
 ## Notes
 - Backend is deployed on Railway (external)
 - Frontend runs locally and is deployed separately
 - All tests conducted on http://localhost:3000
-- Contact form successfully integrates with backend API at https://drilldown.preview.emergentagent.com/api
+- Contact form successfully integrates with backend API
+- Admin credentials: username=admin, password=drilldown2025
+- SMTP not configured - email responses logged to console
