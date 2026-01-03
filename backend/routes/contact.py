@@ -34,7 +34,7 @@ async def submit_contact_form(
         
         return {
             "success": True,
-            "message": "Thank you for contacting us! We'll get back to you soon.",
+            "message": "Thank you for contacting us! Your message has been received and stored. We'll get back to you soon.",
             "submission_id": submission.id
         }
         
