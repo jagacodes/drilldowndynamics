@@ -31,7 +31,9 @@ async def root():
 
 # Import contact routes
 from routes.contact import router as contact_router
+from routes.admin import router as admin_router
 api_router.include_router(contact_router, tags=["contact"])
+api_router.include_router(admin_router, prefix="/admin", tags=["admin"])
 
 # Include the router in the main app
 app.include_router(api_router)
