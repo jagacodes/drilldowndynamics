@@ -25,7 +25,8 @@ async def submit_contact_form(
         submission_dict = submission.dict()
         await db.contact_submissions.insert_one(submission_dict)
         
-        logger.info(f"Contact submission stored: {submission.id}")
+        logger.info(f"✅ Contact submission stored successfully in MongoDB: {submission.id}")
+        logger.info(f"   From: {submission.name} ({submission.email})")
         
         background_tasks.add_task(
             send_email_notification,
