@@ -9,6 +9,7 @@ import Services from './pages/Services';
 import Leadership from './pages/Leadership';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Admin from './pages/Admin';
 import { Toaster } from './components/ui/sonner';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/leadership" element={<Leadership />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         <Footer />
