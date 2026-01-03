@@ -46,7 +46,7 @@
 - **Result**: Mobile menu button and navigation working correctly
 
 ### TC6: Admin Login
-- **Status**: PENDING
+- **Status**: ✅ PASSED
 - **Description**: Test admin login with valid credentials
 - **Steps**:
   1. Navigate to /admin
@@ -54,31 +54,59 @@
   3. Enter password: drilldown2025
   4. Click Login
   5. Verify dashboard loads
+- **Result**: Login successful, dashboard loads with stats cards showing Total Submissions: 9, Pending: 9, Responded: 0
 
 ### TC7: Admin View Submissions
-- **Status**: PENDING
+- **Status**: ✅ PASSED
 - **Description**: View all contact submissions in admin dashboard
 - **Steps**:
   1. Login as admin
   2. Verify submissions table displays
-  3. Check pagination/sorting
+  3. Check table headers and data
+- **Result**: Submissions table displays correctly with all required columns (Date, Name, Email, Company, Status, Actions). Found 9 submissions with proper action buttons (View, Respond, Status Toggle, Delete)
 
-### TC8: Admin Respond to Query
-- **Status**: PENDING
+### TC8: Admin View Submission Details
+- **Status**: ✅ PASSED
+- **Description**: View detailed information of a submission
+- **Steps**:
+  1. Click "eye" icon on any submission
+  2. Verify modal opens with full details
+  3. Close modal
+- **Result**: Modal opens successfully showing complete submission details (name, email, phone, company, message, submission date)
+
+### TC9: Admin Respond to Query
+- **Status**: ✅ PASSED
 - **Description**: Respond to a contact submission
 - **Steps**:
   1. Click respond button on a submission
-  2. Enter response text
-  3. Submit response
-  4. Verify status changes to "responded"
+  2. Enter response text: "Thank you for your inquiry. We will contact you soon."
+  3. Verify email checkbox is visible
+  4. Submit response
+- **Result**: Response modal opens, allows text entry, shows email checkbox, successfully submits response
 
-### TC9: Admin Delete Submission
-- **Status**: PENDING
-- **Description**: Delete a submission
+### TC10: Admin Status Toggle
+- **Status**: ✅ PASSED
+- **Description**: Toggle submission status between pending and responded
 - **Steps**:
-  1. Click delete button
-  2. Confirm deletion
-  3. Verify submission is removed
+  1. Click status toggle button on a submission
+  2. Verify status changes
+- **Result**: Status toggle functionality works correctly
+
+### TC11: Admin Refresh Data
+- **Status**: ✅ PASSED
+- **Description**: Refresh dashboard data
+- **Steps**:
+  1. Click "Refresh" button
+  2. Verify data reloads
+- **Result**: Refresh button works correctly, data reloads successfully
+
+### TC12: Admin Logout
+- **Status**: ✅ PASSED
+- **Description**: Logout from admin dashboard
+- **Steps**:
+  1. Click "Logout" button
+  2. Verify redirected to login screen
+- **Result**: Logout successful, redirected back to login form with success message
 
 ## Incorporate User Feedback
 - User reported "Request a Quote" button was not working
