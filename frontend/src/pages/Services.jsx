@@ -130,9 +130,9 @@ const Services = () => {
           Our team can design tailored equipment and service packages to meet your
           specific project requirements across the entire energy value chain.
         </p>
-        <a href="/contact" className="btn-primary btn-large">
+        <Link to="/contact" className="btn-primary btn-large">
           Request a Quote
-        </a>
+        </Link>
       </section>
     </div>
   );
