@@ -31,9 +31,19 @@ const Contact = () => {
       const response = await axios.post(`${API}/contact`, formData);
       
       if (response.data.success) {
-        toast.success('Message Sent!', {
-          description: response.data.message,
-        });
+        // Different toast based on whether email was sent
+        if (response.data.email_sent) {
+          toast.success('Message Sent Successfully!', {
+            description: response.data.message,
+            duration: 5000,
+          });
+        } else {
+          toast.success('Message Saved!', {
+            description: response.data.message,
+            duration: 5000,
+          });
+        }
+        
         setFormData({
           name: '',
           email: '',
