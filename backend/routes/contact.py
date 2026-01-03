@@ -28,16 +28,37 @@ async def submit_contact_form(
         logger.info(f"✅ Contact submission stored successfully in MongoDB: {submission.id}")
         logger.info(f"   From: {submission.name} ({submission.email})")
         
-        background_tasks.add_task(
-            send_email_notification,
-            submission_dict
-        )
+        # Try to send email synchronously to check if SMTP is configured
+        email_sent = email_service.send_contact_notification(submission_dict)
         
-        return {
-            "success": True,
-            "message": "Thank you for contacting us! Your message has been received and stored. We'll get back to you soon.",
-            "submission_id": submission.id
-        }
+        # Update database with email status
+        if email_sent:
+            await db.contact_submissions.update_one(
+                {"id": submission.id},
+                {
+                    "$set": {
+                        "email_sent": True,
+                        "email_sent_at": datetime.utcnow()
+                    }
+                }
+            )
+            logger.info(f"📧 Email notification sent successfully for submission {submission.id}")
+        
+        # Return different messages based on email status
+        if email_sent:
+            return {
+                "success": True,
+                "message": "Thank you for contacting us! Your message has been stored and our team has been notified via email. We'll get back to you soon.",
+                "submission_id": submission.id,
+                "email_sent": True
+            }
+        else:
+            return {
+                "success": True,
+                "message": "Thank you for contacting us! Your message has been successfully stored in our database. We'll review it and get back to you soon.",
+                "submission_id": submission.id,
+                "email_sent": False
+            }
         
     except Exception as e:
         logger.error(f"Error processing contact submission: {str(e)}")
