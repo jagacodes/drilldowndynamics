@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Lock, Mail, Phone, Building2, Calendar, MessageSquare, Send, Trash2, CheckCircle, Clock, Eye, X, LogOut, RefreshCw, Users, Inbox, CheckCheck } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { Lock, Mail, Calendar, Send, Trash2, CheckCircle, Clock, Eye, X, LogOut, RefreshCw, Users, Inbox, CheckCheck } from 'lucide-react';
 import { toast } from 'sonner';
 import axios from 'axios';
 
@@ -19,7 +18,39 @@ const Admin = () => {
   const [showResponseModal, setShowResponseModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [deleteId, setDeleteId] = useState(null);
-  const navigate = useNavigate();
+
+  const handleLogout = useCallback(() => {
+    sessionStorage.removeItem('adminAuth');
+    setIsAuthenticated(false);
+    setSubmissions([]);
+    setUsername('');
+    setPassword('');
+    toast.success('Logged out successfully');
+  }, []);
+
+  const fetchData = useCallback(async (user, pass) => {
+    setLoading(true);
+    try {
+      const authHeader = {
+        'Authorization': 'Basic ' + btoa(`${user}:${pass}`)
+      };
+      
+      const [submissionsRes, statsRes] = await Promise.all([
+        axios.get(`${API_URL}/api/admin/submissions`, { headers: authHeader }),
+        axios.get(`${API_URL}/api/admin/stats`, { headers: authHeader })
+      ]);
+      
+      setSubmissions(submissionsRes.data);
+      setStats(statsRes.data);
+    } catch (error) {
+      toast.error('Failed to fetch data');
+      if (error.response?.status === 401) {
+        handleLogout();
+      }
+    } finally {
+      setLoading(false);
+    }
+  }, [handleLogout]);
 
   // Check if already logged in
   useEffect(() => {
@@ -29,7 +60,7 @@ const Admin = () => {
       setIsAuthenticated(true);
       fetchData(username, password);
     }
-  }, []);
+  }, [fetchData]);
 
   const getAuthHeader = () => {
     const savedAuth = sessionStorage.getItem('adminAuth');
@@ -58,39 +89,6 @@ const Admin = () => {
       }
     } catch (error) {
       toast.error('Invalid credentials');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleLogout = () => {
-    sessionStorage.removeItem('adminAuth');
-    setIsAuthenticated(false);
-    setSubmissions([]);
-    setUsername('');
-    setPassword('');
-    toast.success('Logged out successfully');
-  };
-
-  const fetchData = async (user, pass) => {
-    setLoading(true);
-    try {
-      const authHeader = {
-        'Authorization': 'Basic ' + btoa(`${user}:${pass}`)
-      };
-      
-      const [submissionsRes, statsRes] = await Promise.all([
-        axios.get(`${API_URL}/api/admin/submissions`, { headers: authHeader }),
-        axios.get(`${API_URL}/api/admin/stats`, { headers: authHeader })
-      ]);
-      
-      setSubmissions(submissionsRes.data);
-      setStats(statsRes.data);
-    } catch (error) {
-      toast.error('Failed to fetch data');
-      if (error.response?.status === 401) {
-        handleLogout();
-      }
     } finally {
       setLoading(false);
     }
