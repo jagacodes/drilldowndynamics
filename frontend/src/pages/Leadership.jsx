@@ -4,7 +4,7 @@ import { Briefcase, Award } from 'lucide-react';
 const Leadership = () => {
   const leaders = [
     {
-      name: 'Toyosi Ayo-Bello',
+      name: 'Afusat Bimpe Byll',
       experience: '8+ Years',
       expertise: [
         'Human Resources Management',
@@ -15,7 +15,7 @@ const Leadership = () => {
       description: 'Brings extensive experience in HR management and deep understanding of Nigerian oil and gas policy framework, ensuring compliance and strategic stakeholder relationships.',
     },
     {
-      name: 'Kelvin Oliko',
+      name: 'Bukola Ajayi',
       experience: '7+ Years',
       expertise: [
         'Project Management',
@@ -26,7 +26,7 @@ const Leadership = () => {
       description: 'Drives commercial success through strategic market evaluation, procurement excellence, and technical project delivery across oil and gas operations.',
     },
     {
-      name: 'Keside Anosike',
+      name: 'Oluchukwu Ogbu Esther',
       experience: '10+ Years',
       expertise: [
         'Oil & Gas Communications',
@@ -37,7 +37,7 @@ const Leadership = () => {
       description: 'Leads strategic communications and policy direction, leveraging a decade of experience in positioning oil and gas initiatives and building industry relationships.',
     },
     {
-      name: 'Adewuyi Adeyanju',
+      name: 'Abidemi Akinloye',
       experience: '15+ Years',
       expertise: [
         'Technical Deployment',
