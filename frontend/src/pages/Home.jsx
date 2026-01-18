@@ -10,23 +10,28 @@ const Home = () => {
       image: 'https://images.unsplash.com/photo-1561625101-fd85c8e135f2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
     },
     {
+      title: 'Equipment Rental Services',
+      description: 'Flexible rental of drilling rigs, pumps, generators, and oilfield equipment',
+      image: 'https://images.unsplash.com/photo-1748036564757-2bf6ead3488e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxvaWwlMjBnYXMlMjBkcmlsbGluZyUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3Njg3NDMyNjF8MA&ixlib=rb-4.1.0&q=85'
+    },
+    {
+      title: 'AI & Digital Solutions',
+      description: 'Advanced analytics, machine learning, and IoT for oil and gas optimization',
+      image: 'https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxkYXRhJTIwY2VudGVyJTIwdGVjaG5vbG9neSUyMHNlcnZlciUyMGRpZ2l0YWwlMjBpbmZyYXN0cnVjdHVyZXxlbnwwfHx8fDE3Njg3NDM1MDl8MA&ixlib=rb-4.1.0&q=85'
+    },
+    {
       title: 'Energy Logistics & Supply Chain',
       description: 'Integrated transportation, storage, and distribution solutions',
       image: 'https://images.unsplash.com/photo-1629540946404-ebe133e99f49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
-    },
-    {
-      title: 'Sustainable Energy Solutions',
-      description: 'CCUS, hydrogen, renewables integration, and emissions reduction',
-      image: 'https://images.unsplash.com/photo-1572970388430-a7fff761e597?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxvaWxmaWVsZHxlbnwwfHx8fDE3NjYxMDEwNDZ8MA&ixlib=rb-4.1.0&q=85'
     },
   ];
 
   const benefits = [
     'Over 25 years of combined leadership experience',
     'Global drilling services for oil, gas, geothermal, and mining',
+    'Flexible equipment rental for all project sizes',
+    'AI-powered analytics and digital transformation solutions',
     'Integrated energy logistics and supply chain solutions',
-    'Advanced R&D in drilling automation and digital transformation',
-    'Sustainable energy solutions (CCUS, hydrogen, renewables)',
     'Comprehensive consulting and project management services',
   ];
 
