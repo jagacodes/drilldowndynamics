@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wrench, Settings, Gauge, HardHat } from 'lucide-react';
+import { Wrench, Settings, Gauge, HardHat, Truck } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -15,6 +15,19 @@ const Services = () => {
         'Well management and optimization',
       ],
       image: 'https://images.unsplash.com/photo-1578356058390-f58c575337a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxvZmZzaG9yZSUyMG9pbCUyMHJpZ3xlbnwwfHx8fDE3NjYxMDEwMzR8MA&ixlib=rb-4.1.0&q=85'
+    },
+    {
+      icon: <Truck size={40} />,
+      title: 'Oil & Gas Equipment Rental Services',
+      description: 'Comprehensive equipment rental solutions for the oil and gas industry. We provide flexible short-term and long-term rental options for drilling rigs, pumps, generators, compressors, and specialized oilfield equipment to meet your project needs.',
+      features: [
+        'Drilling rigs and workover units rental',
+        'Pumps, generators, and compressors',
+        'Mud systems and solids control equipment',
+        'Safety and well control equipment',
+        'Flexible rental terms and maintenance support',
+      ],
+      image: 'https://images.unsplash.com/photo-1748036564757-2bf6ead3488e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxvaWwlMjBnYXMlMjBkcmlsbGluZyUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3Njg3NDMyNjF8MA&ixlib=rb-4.1.0&q=85'
     },
     {
       icon: <Settings size={40} />,
