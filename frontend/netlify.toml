@@ -2,26 +2,8 @@
   publish = "build"
   command = "yarn build"
 
-# Headers for static files
-[[headers]]
-  for = "/robots.txt"
-  [headers.values]
-    Content-Type = "text/plain"
-
-[[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml"
-
-# Redirects - SPA fallback (but not for static files)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {Role = ["admin"]}
-
-# This ensures static files are served first, then SPA fallback
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  force = false
