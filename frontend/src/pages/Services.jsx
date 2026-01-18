@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wrench, Settings, Gauge, HardHat, Truck } from 'lucide-react';
+import { Wrench, Settings, Gauge, HardHat, Truck, Cpu } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -28,6 +28,19 @@ const Services = () => {
         'Flexible rental terms and maintenance support',
       ],
       image: 'https://images.unsplash.com/photo-1748036564757-2bf6ead3488e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxvaWwlMjBnYXMlMjBkcmlsbGluZyUyMGVxdWlwbWVudCUyMG1hY2hpbmVyeXxlbnwwfHx8fDE3Njg3NDMyNjF8MA&ixlib=rb-4.1.0&q=85'
+    },
+    {
+      icon: <Cpu size={40} />,
+      title: 'AI & Digital Solutions for Oil and Gas',
+      description: 'Cutting-edge artificial intelligence and digital transformation solutions designed specifically for the oil and gas industry. We leverage advanced analytics, machine learning, and IoT technologies to optimize operations, reduce costs, and enhance decision-making.',
+      features: [
+        'Predictive maintenance and asset monitoring',
+        'AI-powered drilling optimization',
+        'Real-time data analytics and visualization',
+        'Digital twin technology for operations',
+        'Automated reporting and compliance systems',
+      ],
+      image: 'https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxkYXRhJTIwY2VudGVyJTIwdGVjaG5vbG9neSUyMHNlcnZlciUyMGRpZ2l0YWwlMjBpbmZyYXN0cnVjdHVyZXxlbnwwfHx8fDE3Njg3NDM1MDl8MA&ixlib=rb-4.1.0&q=85'
     },
     {
       icon: <Settings size={40} />,
